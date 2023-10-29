@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: consolas, monospace;
+  background-color: black;
+  color: white;
+}
+
+#gameContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: min-content;
+  width: min-content;
+  margin-bottom: 50px;
+}
+
+.cell {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  font-size: 2.5rem;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+#restartBtn {
+  width: 80px;
+  height: 30px;
+}
